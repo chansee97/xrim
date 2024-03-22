@@ -1,0 +1,36 @@
+@import './reset.css';
+
+
+html,
+body,
+#app {
+  height: 100%;
+  
+}
+
+html.dark {
+  background: #121212;
+  color-scheme: dark;
+}
+
+#app{
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #d9d9d9;
+}
+
+/* fade-slide */
+.fade-slide-leave-active,
+.fade-slide-enter-active {
+  transition: all 0.3s;
+}
+
+.fade-slide-enter-from {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.fade-slide-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
