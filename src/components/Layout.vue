@@ -6,7 +6,7 @@
   <main class="wh-full bg-#fff flex flex-col">
     <TitleBar />
     <div class="flex flex-1">
-      <MoudleSwitch />
+      <SlideBar />
       <div class="flex-1">
         <router-view v-slot="{ Component }">
           <transition
@@ -22,6 +22,3 @@
     </div>
   </main>
 </template>
-
-<style scoped>
-</style>

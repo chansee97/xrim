@@ -4,7 +4,7 @@
 
 <template>
   <div>
-    about
+    <n-button>检查更新</n-button>
   </div>
 </template>
 

@@ -2,7 +2,6 @@ import Unocss from 'unocss/vite'
 import vue from '@vitejs/plugin-vue'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
-import { VueRouterAutoImports } from 'unplugin-vue-router'
 import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 
 export function setVitePlugins() {
@@ -16,7 +15,7 @@ export function setVitePlugins() {
     AutoImport({
       imports: [
         'vue',
-        VueRouterAutoImports,
+        'vue-router',
         '@vueuse/core',
         {
           'naive-ui': [
